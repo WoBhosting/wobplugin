@@ -1,3 +1,9 @@
-name: {$PluginName}
-main: {$PackageName}.{$MainClass}
-version: {$VersionNumber}
+name: WoBPlugin
+main: com.wobhosting.dev.wobplugin.wobplugin
+version: 0.1d4
+commands:
+  wobhosting:
+    description: simple info page
+    usage: /wobhosting
+    permission: wob.wobhosting
+    permission-message: You don't have permission to do that.
