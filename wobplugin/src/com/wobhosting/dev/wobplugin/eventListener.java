@@ -16,7 +16,7 @@ public class eventListener implements Listener {
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent joinEvent){
 		if (joinEvent.getPlayer().getName().equalsIgnoreCase("domefavor95")) {
-			joinEvent.getPlayer().getWorld().strikeLightning(joinEvent.getPlayer().getLocation());
+			joinEvent.getPlayer().getWorld().strikeLightningEffect(joinEvent.getPlayer().getLocation());
 			Bukkit.broadcastMessage(ChatColor.RED + "He has come.");
 		}
 		joinEvent.getPlayer().sendMessage(ChatColor.RED + plugin.getConfig().getString("message"));
