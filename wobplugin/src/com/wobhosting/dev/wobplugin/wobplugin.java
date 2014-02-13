@@ -24,16 +24,9 @@ public class wobplugin extends JavaPlugin{
 		getConfig().options().copyDefaults(true);
 		saveConfig();
 		
-		String message = getConfig().getString("message");
-		
 		//logging enabled success
 		getLogger().info("WoBHosting plugin has been enabled.");
 	}
-	
-
-	
-	
-	
 	
 	@Override
 	public void onDisable(){
