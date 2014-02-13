@@ -1,2 +1,7 @@
 #default config file.
 message: This server is running the WoBHosting plugin!
+test1: Aaaaaaa
+test2: Bbbbbbb
+test3: Ccccccc
+test4: Ddddddd
+test5: If you see this message, all variables have been loaded.
