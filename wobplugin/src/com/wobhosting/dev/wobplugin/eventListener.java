@@ -17,7 +17,7 @@ public class eventListener implements Listener {
 	public void onPlayerJoin(PlayerJoinEvent joinEvent){
 		Player p = joinEvent.getPlayer();
 		
-		p.sendMessage(ChatColor.GREEN + getConfig().getString("message"));
+		p.sendMessage(ChatColor.GREEN + plugin.getConfig().getString("message"));
 	}
 	
 }
