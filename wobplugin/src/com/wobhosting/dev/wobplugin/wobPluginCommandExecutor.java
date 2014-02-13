@@ -20,7 +20,7 @@ public class wobPluginCommandExecutor implements CommandExecutor {
 		if (cmd.getName().equalsIgnoreCase("wobhosting")){
 			player.sendMessage(ChatColor.BLUE + plugin.getConfig().getString("message"));
 		}
-		return false;
+		return true;
 	}
 
 }
