@@ -29,7 +29,6 @@ public class wobplugin extends JavaPlugin{
 	
 	@Override
 	public void onDisable(){
-		// TODO Insert logic to be performed when the plugin is disabled
 		getLogger().info("WoBHosting plugin has been DISABLED");
 	}
 	
