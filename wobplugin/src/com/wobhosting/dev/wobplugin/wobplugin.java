@@ -1,4 +1,5 @@
 package com.wobhosting.dev.wobplugin;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -23,6 +24,7 @@ public class wobplugin extends JavaPlugin{
 		
 		//logging enabled success
 		getLogger().info("WoBHosting plugin has been enabled.");
+		Bukkit.broadcastMessage(getConfig().getString("test5"));
 	}
 	
 	@Override
