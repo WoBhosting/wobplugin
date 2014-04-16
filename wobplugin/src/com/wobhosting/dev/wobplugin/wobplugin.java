@@ -1,4 +1,7 @@
 package com.wobhosting.dev.wobplugin;
+import java.util.HashMap;
+import java.util.List;
+
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -7,12 +10,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class wobplugin extends JavaPlugin{
 	private final eventListener eventListener = new eventListener(this);
-	
+	public static HashMap<String, Integer> ticketCreate = null;
 	
 	@Override
 	public void onEnable(){
 		//declare commands
-		getCommand("wobhosting").setExecutor(new wobPluginCommandExecutor(this));
+		getCommand("wobhosting").setExecutor(new commandExecutor(this));
 		
 		//register events
 		PluginManager pm = getServer().getPluginManager();
